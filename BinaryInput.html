@@ -1,0 +1,49 @@
+<html>
+
+ <head>
+
+  <style>
+
+
+
+  </style>
+
+ </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <body>
+
+  Binary Code
+  <br>
+  <input id="bone" placeholder="Binary 1" action></input>
+  <input id="btwo" placeholder="Binary 2"></input>
+  <button onclick="getBinary()">Click</button>
+  
+  <p id="text"></p>
+  <p id="text2"></p>
+  <p id="text3"></p>
+
+  <script>
+   
+    function getBinary(){
+
+       var binaryone = document.getElementById('bone').value;
+       console.log(bone.value);
+       document.getElementById("text").innerHTML = binaryone;
+       var binone = parseInt(binaryone.toString(2));
+
+       var binarytwo = document.getElementById('btwo').value;
+       console.log(btwo.value);
+       document.getElementById("text2").innerHTML = binarytwo;
+       var bintwo = parseInt(binarytwo.toString(2));
+
+       var bnysum = binone + bintwo;
+       var binsum = bnysum.toString(2);
+       document.getElementById("text3").innerHTML = binsum;
+       console.log(binsum);
+    }
+
+  </script>
+
+ </body>
+
+</html>
