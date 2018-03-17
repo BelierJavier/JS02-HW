@@ -1,0 +1,82 @@
+<html>
+
+	<body>
+
+	</body>
+
+	<script>
+
+		var king1 = {name: "Macbeth" , age: 54}
+		var king2 = {name: "Macduff" , age: 54}
+
+		var queen1 = {name: "Elizabeth" , age: 68}
+		var queen2 = {name: "Elizabeth" , age: 68}
+
+		var knight1 = {name: "Jonathan" , age: 34}
+		var knight2 = {name: "Jonathan" , age: 28}
+
+		var rook1 = {name: "McStewart" , age: 31}
+		var rook2 = {name: "Sage IV" , age: 29}
+
+
+		function objectCompare(){
+          if(king1 === king2){
+          	return "Identical";
+          	console.log("Identical")
+          }
+          else {
+          	return "not Identical";
+          	console.log("Not Identical")
+
+          }
+
+		}
+		function objectCompare2(){
+          if(queen1 == queen2){
+          	return "Identical";
+          	console.log("Identical")
+          }
+          else {
+          	return "not Identical";
+          	console.log("Not Identical")
+
+          }
+
+		}function objectCompare3(){
+          if(knight1 === knight2){
+          	return "Identical";
+          	console.log("Identical")
+          }
+          else {
+          	return "not Identical";
+          	console.log("Not Identical")
+
+          }
+
+		}function objectCompare4(){
+          if(rook1 === rook2){
+          	return "Identical";
+          	console.log("Identical")
+          }
+          else {
+          	return "not Identical";
+          	console.log("Not Identical")
+
+          }
+
+		}
+       
+		objectCompare();
+		objectCompare2();
+		objectCompare3();
+		objectCompare4();
+
+        document.write("King one & King two are " + objectCompare() + "<br>");
+        document.write("Queen one & Queen two are " + objectCompare2() + "<br>");
+        document.write("Knight one & Knight two are " + objectCompare3() + "<br>");
+        document.write("Rook one & Rook two are " + objectCompare4() + "<br>");
+        
+	</script>
+
+
+</html>
