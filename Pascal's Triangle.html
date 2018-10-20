@@ -1,0 +1,50 @@
+<html>
+
+	<body>
+
+        Pascal's Triangle Size
+        <br>
+    	<input id="userN" placeholder="Enter A Value" ></input>
+    	<input id = "start" type="submit">Click</input>
+
+	</body>
+
+		<script>  
+		    var start = document.getElementById("start");
+            start.addEventListener("click", function(){
+            var input = document.getElementById("userN").value;
+            
+           var triangle = pascalT(input);
+		   console.log(triangle);
+
+            });
+
+            
+            var num = 10 ,triangle;
+
+		function pascalT(num) {
+
+			//var number = document.getElementById('userN').value;
+			//var n = parseInt(number);
+            //var num = n ,triangle;
+            
+  			var triangle = [[1]], next;
+
+  			for (var r = 0; r < num-1; r++) {
+    		  next = [1];
+    			for (var c = 1; c < triangle[r].length; c++) {
+      			  next[c] = triangle[r][c] + triangle[r][c-1];
+    			}
+    				next.push(1);
+    				triangle.push(next);
+  					}
+
+  			return triangle;
+
+		}
+				//var triangle = pascalT(num);
+
+        
+    	</script>
+
+</html>
